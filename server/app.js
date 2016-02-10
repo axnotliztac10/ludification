@@ -12,8 +12,17 @@ var config = require('./config/environment');
 // Setup server
 var app = express();
 var server = require('http').createServer(app);
+var fs = require('fs');
 require('./config/express')(app);
 require('./routes')(app);
+
+var io = require('socket.io')(server);
+
+io.on('connection', function (socket) {
+  console.log('___------______------_____ NEW EVENT!');
+});
+
+app.set('io', io);
 
 // Start server
 server.listen(config.port, config.ip, function () {

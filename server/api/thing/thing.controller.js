@@ -34,4 +34,6 @@ exports.index = function(req, res) {
   info : 'Easily deploy your app to Heroku or Openshift with the heroku and openshift subgenerators'
   }
   ]);
+
+  req.app.get('io').sockets.emit('newArrival')
 };

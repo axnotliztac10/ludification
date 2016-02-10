@@ -7,7 +7,7 @@
 var errors = require('./components/errors');
 var path = require('path');
 
-module.exports = function(app) {
+module.exports = function(app, io) {
 
   // Insert routes below
   app.use('/api/things', require('./api/thing'));

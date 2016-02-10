@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('ludificationApp')
-  .controller('MainLudCtrl', function ($scope, $timeout) {
+  .controller('MainLudCtrl', function ($scope, $timeout, SocketIO) {
     $scope.message = 'Hello';
 
     $scope.persons = [
@@ -10,6 +10,10 @@ angular.module('ludificationApp')
 	    { name: 'Black Olives', ontime: true, count: 19 },
 	    { name: 'Green Peppers', ontime: false, count: 10 }
 	 ];
+
+	 $scope.$on('newPerson', function () {
+	 	$scope.newPerson();
+	 })
 
 	$scope.newPerson = function () {
 		$scope.animateList = true;
@@ -20,3 +24,15 @@ angular.module('ludificationApp')
 	};
 
   });
+
+angular.module('ludificationApp')
+  .service('SocketIO', function ($rootScope) {
+  		var socket = io('http://localhost:7000');
+	   	socket.on('newArrival', function (data) {
+	    	$rootScope.$broadcast('newPerson', data);
+	    });
+
+	    return socket;
+  });
+
+  

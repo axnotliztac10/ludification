@@ -31,7 +31,11 @@ module.exports = function (grunt) {
     pkg: grunt.file.readJSON('package.json'),
     sshexec: {
       deploy: {
-        command: 'git pull origin gh-pages',
+        command: [
+          'cd /usr/share/nginx/gottime.dosdev.com/html',
+          'git checkout gh-pages'
+          'git pull origin gh-pages'
+        ],
         options: {
           host: '<%= secret.host %>',
           username: '<%= secret.username %>',

@@ -16,7 +16,8 @@ module.exports = function (grunt) {
     ngtemplates: 'grunt-angular-templates',
     cdnify: 'grunt-google-cdn',
     protractor: 'grunt-protractor-runner',
-    buildcontrol: 'grunt-build-control'
+    buildcontrol: 'grunt-build-control',
+    ssh: 'grunt-ssh'
   });
 
   // Time how long tasks take. Can help when optimizing build times
@@ -26,7 +27,18 @@ module.exports = function (grunt) {
   grunt.initConfig({
 
     // Project settings
+    secret: grunt.file.readJSON('secret.json'),
     pkg: grunt.file.readJSON('package.json'),
+    sshexec: {
+      deploy: {
+        command: 'git pull origin gh-pages',
+        options: {
+          host: '<%= secret.host %>',
+          username: '<%= secret.username %>',
+          password: '<%= secret.password %>'
+        }
+      }
+    },
     yeoman: {
       // configurable paths
       client: require('./bower.json').appPath || 'client',

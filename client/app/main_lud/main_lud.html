@@ -1,28 +1,29 @@
-<md-toolbar md-scroll-shrink ng-if="true">
-	<div class="md-toolbar-tools">
-	  <h3>
-	    <span>Inicio</span>
-	  </h3>
-	  <md-button ng-click="newPerson()" class="md-primary md-fab"></md-button>
-	</div>
-</md-toolbar>
+<div flex layout-fill layout="row">
+	<md-content flex>
+		<!--<md-toolbar md-scroll-shrink ng-if="true">
+			<div class="md-toolbar-tools">
+			  <h3>
+			    <span>Inicio</span>
+			  </h3>
+			  <md-button ng-click="newPerson()" class="md-primary md-fab"></md-button>
+			</div>
+		</md-toolbar>-->
+		<md-list ng-cloak>
+		  <!--md-subheader class="md-no-sticky">Inicio</md-subheader>-->
+		  <md-list-item ng-repeat="person in persons" ng-class="{'animate': animateList, 'first-element': $first}">
 
-<md-content flex>
-	<md-list ng-cloak ng-class="{'animate': animateList}">
-	  <!--md-subheader class="md-no-sticky">Inicio</md-subheader>-->
-	  <md-list-item ng-repeat="person in persons" ng-class="{'first-element': $first}">
-
-	    <img src="assets/images/user1.png" class="md-avatar"/>
-	    <p> {{ person.name }}  <span>{{persons.ontime | ontimeLabel}}</span> 
-	    <br>
-	    <md-chips>
-      		<md-chip>Digital</md-chip>
-      		<md-chip>Chilpancingo</md-chip>
-      		<md-chip class="timer-logo"></md-chip>
-      		<md-chip>{{ person.count }}</md-chip>
-		</md-chips>
-      	</p>
-		<md-button class="md-primary md-fab">9:50</md-button>
-	  </md-list-item>
-	</md-list>
-</md-content>
+		    <img src="assets/images/user1.png" class="md-avatar"/>
+		    <p> {{ person.name }}  <span>{{person.ontime | ontimeLabel}}</span> 
+		    <br>
+		    <md-chips>
+	      		<md-chip>Digital</md-chip>
+	      		<md-chip>Chilpancingo</md-chip>
+	      		<md-chip ng-class="{'late': person.timeLabel == 'late', 'ontime': person.timeLabel == 'ontime', 'tolerancy': person.timeLabel == 'tolerancy' }" class="timer-logo"></md-chip>
+	      		<md-chip>{{ person.count }}</md-chip>
+			</md-chips>
+	      	</p>
+			<md-button ng-click="newPerson()" class="md-primary md-fab">{{person.time | date:"h:mm"}}</md-button>
+		  </md-list-item>
+		</md-list>
+	</md-content>
+</div>

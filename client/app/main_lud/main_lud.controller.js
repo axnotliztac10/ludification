@@ -5,34 +5,42 @@ angular.module('ludificationApp')
     $scope.message = 'Hello';
 
     $scope.persons = [
-	    { name: 'Sergio Perez', ontime: true, count: 3 },
-	    { name: 'Sausage', ontime: false, count: 2 },
-	    { name: 'Black Olives', ontime: true, count: 19 },
-	    { name: 'Green Peppers', ontime: false, count: 10 }
+	    { time: '1288323623006', name: 'Sergio Perez', ontime: true, count: 3, timeLabel: 'late' },
+	    { time: '1288323623006', name: 'Sausage', ontime: false, count: 2, timeLabel: 'tolerancy' },
+	    { time: '1288323623006', name: 'Black Olives', ontime: true, count: 19, timeLabel: 'ontime' },
+	    { time: '1288323623006', name: 'Green Peppers', ontime: false, count: 10, timeLabel: 'late' }
 	 ];
 
-	 $scope.$on('newPerson', function () {
-	 	$scope.newPerson();
+	 $scope.$on('newPerson', function (cfg, data) {
+	 	$scope.newPerson(data);
 	 })
 
-	$scope.newPerson = function () {
+	$scope.newPerson = function (data) {
+		var d = new Date();
+		var n = d.getTime();
+		var person = {time: '1288323623006', name: 'Josh Peppers', ontime: false, count: 5, timeLabel: 'late' };
+
+		if (data) {
+			person = {time: n, name: data.Name, ontime: false, count: 5, timeLabel: 'late' }
+		}
+
 		$scope.animateList = true;
 		$timeout(function () {
 			$scope.animateList = false;
-			$scope.persons.unshift({ name: 'Josh Peppers', ontime: false, count: 5 });
+			$scope.persons.unshift(person);
 		}, 500);
 	};
 
   });
 
 angular.module('ludificationApp')
-  .service('SocketIO', function ($rootScope) {
-  		var socket = io('http://localhost:7000');
+  .service('SocketIO', function ($rootScope, AppConfig) {
+  		var socket = io(AppConfig.Socket);
 	   	socket.on('newArrival', function (data) {
+	   		console.log(data)
 	    	$rootScope.$broadcast('newPerson', data);
 	    });
 
 	    return socket;
   });
 
-  

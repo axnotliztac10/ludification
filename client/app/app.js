@@ -8,7 +8,9 @@ angular.module('ludificationApp', [
   'ngMessages',
   'ui.router',
   'ngMaterial'
-])
+]).constant("AppConfig", {
+        socket: 'http://localhost:7000'
+    })
   .config(function($mdIconProvider) {
     $mdIconProvider
       .iconSet('action', '../assets/iconsets/action-icons.svg', 24)

@@ -2,14 +2,13 @@
 $baseline-grid: 8px;
 $list-item-primary-avatar-width: $baseline-grid * 7;
 
-md-list.animate {
-  transform: translateY(92px);
-  transition: 0.5s ease-in-out;
+body, html {
+  background-color: rgb(15, 18, 28) !important;
 }
 
 md-list-item {
   background-color: #0f121c;
-  padding: 10px 20px 10px 20px;
+  padding: 10px 30px 10px 30px;
   & > p {
     margin-left: 10px !important;
     color: #fff;
@@ -25,12 +24,15 @@ md-list-item {
 [ui-view] {
   height: calc(100% - 1px);
   & > md-content {
-    height: calc(100% - 56px)
+    height: calc(100% - 56px);
   }
 }
 
 md-content {
   background-color: rgb(15, 18, 28);
+  md-list {
+    padding-top: 0px;
+  }
 }
 
 $chip-height: 26px;
@@ -49,14 +51,41 @@ $chip-padding: 0 5px 0 5px;
     &.timer-logo {
       margin-right: 0px;
       border-radius: 4px 0px 0px 4px !important;
-      background-color: #c42b13;
       width: 16px;
+      &.late {
+        background-color: #CC2207 !important;
+      }
+      &.tolerancy {
+        background-color: yellow !important;
+      }
+      &.ontime {
+        background-color: green !important;
+      }
     }
   }
 }
 
+.md-button.md-fab {
+  box-shadow: 1px 1px 0px 1px rgba(0, 0, 0, 0.36) !important;
+}
+
+[role="listitem"].animate {
+  transform: translateY(92px);
+  transition: 0.5s ease-in-out;
+}
+
 [role="listitem"].first-element {
   animation: cubic-bezier(.46, 1.48, .18, .81) slideup 3s;
+  background: #232940;
+  height: 110px;
+  padding: 10px 20px 10px 20px;
+  .md-avatar {
+    width: 75px;
+    height: 75px;
+  }
+  .md-button.md-fab {
+    zoom: 1.2;
+  }
 }
 
 @keyframes slideup {
@@ -73,6 +102,6 @@ $chip-padding: 0 5px 0 5px;
         transform: translateY(0px);
     }
     100% {
-        transform: translateY(200px); 
+        transform: translateY(0px); 
     }
 }

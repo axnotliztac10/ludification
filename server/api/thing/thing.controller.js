@@ -13,27 +13,110 @@ var _ = require('lodash');
 
 // Get list of things
 exports.index = function(req, res) {
-  res.json([
+  
+  var persons = [
   {
-  name : 'Development Tools',
-  info : 'Integration with popular tools such as Bower, Grunt, Karma, Mocha, JSHint, Node Inspector, Livereload, Protractor, Jade, Stylus, Sass, CoffeeScript, and Less.'
-  }, {
-  name : 'Server and Client integration',
-  info : 'Built with a powerful and fun stack: MongoDB, Express, AngularJS, and Node.'
-  }, {
-  name : 'Smart Build System',
-  info : 'Build system ignores `spec` files, allowing you to keep tests alongside code. Automatic injection of scripts and styles into your index.html'
-  },  {
-  name : 'Modular Structure',
-  info : 'Best practice client and server structures allow for more code reusability and maximum scalability'
-  },  {
-  name : 'Optimized Build',
-  info : 'Build process packs up your templates as a single JavaScript payload, minifies your scripts/css/images, and rewrites asset names for caching.'
-  },{
-  name : 'Deployment Ready',
-  info : 'Easily deploy your app to Heroku or Openshift with the heroku and openshift subgenerators'
-  }
-  ]);
+    "ID":1,
+    "User_PIN":1,
+    "Privilege":14,
+    "Name":"Joe",
+    "Password":12345,
+    "Face_Group_ID":0,
+    "Acc_Group_ID":1,
+    "Dept_ID":0,
+    "Is_Group_TZ":1,
+    "Verify_Type":-1,
+    "Main_Card":11043482,
+    "Vice_Card":"",
+    "CREATE_ID":"",
+    "MODIFY_TIME":"",
+    "SEND_FLAG":0,
+    "Expires":0,
+    "StartDatetime":0,
+    "EndDatetime":0,
+    "VaildCount":0,
+    "Timezone1":1,
+    "Timezone2":0,
+    "Timezone3":0
+  },
+  {
+    "ID":2,
+    "User_PIN":2,
+    "Privilege":14,
+    "Name":"Nino",
+    "Password":12345,
+    "Face_Group_ID":0,
+    "Acc_Group_ID":1,
+    "Dept_ID":0,
+    "Is_Group_TZ":1,
+    "Verify_Type":-1,
+    "Main_Card":null,
+    "Vice_Card":"",
+    "CREATE_ID":"",
+    "MODIFY_TIME":"",
+    "SEND_FLAG":0,
+    "Expires":0,
+    "StartDatetime":0,
+    "EndDatetime":0,
+    "VaildCount":0,
+    "Timezone1":1,
+    "Timezone2":0,
+    "Timezone3":0
+  },
+  {
+    "ID":3,
+    "User_PIN":3,
+    "Privilege":0,
+    "Name":"Alejandro Sena",
+    "Password":null,
+    "Face_Group_ID":0,
+    "Acc_Group_ID":1,
+    "Dept_ID":0,
+    "Is_Group_TZ":1,
+    "Verify_Type":-1,
+    "Main_Card":null,
+    "Vice_Card":"",
+    "CREATE_ID":"",
+    "MODIFY_TIME":"",
+    "SEND_FLAG":0,
+    "Expires":0,
+    "StartDatetime":0,
+    "EndDatetime":0,
+    "VaildCount":0,
+    "Timezone1":1,
+    "Timezone2":0,
+    "Timezone3":0
+  },
+  {
+    "ID":4,
+    "User_PIN":4,
+    "Privilege":0,
+    "Name":"Alejandro Sena",
+    "Password":null,
+    "Face_Group_ID":0,
+    "Acc_Group_ID":1,
+    "Dept_ID":0,
+    "Is_Group_TZ":1,
+    "Verify_Type":-1,
+    "Main_Card":null,
+    "Vice_Card":"",
+    "CREATE_ID":"",
+    "MODIFY_TIME":"",
+    "SEND_FLAG":0,
+    "Expires":0,
+    "StartDatetime":0,
+    "EndDatetime":0,
+    "VaildCount":0,
+    "Timezone1":1,
+    "Timezone2":0,
+    "Timezone3":0
+  }];
 
-  req.app.get('io').sockets.emit('newArrival')
+  var person;
+
+  persons.forEach(function(item) { if (req.body.user_id == item['ID']) { person = item; } })
+
+  res.json(person);
+
+  req.app.get('io').sockets.emit('newArrival', person)
 };

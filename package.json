@@ -14,6 +14,7 @@
     "express-session": "~1.0.2",
     "lodash": "~3.10.1",
     "method-override": "~1.0.0",
+    "mongoose": "^4.4.3",
     "morgan": "~1.0.0",
     "serve-favicon": "~2.0.1",
     "socket.io": "^1.4.5"
@@ -49,7 +50,7 @@
     "grunt-open": "~0.2.3",
     "grunt-protractor-runner": "^1.1.0",
     "grunt-rev": "~0.1.0",
-    "grunt-ssh": "^0.12.9",
+    "grunt-scp": "^0.1.8",
     "grunt-svgmin": "~0.4.0",
     "grunt-usemin": "~2.1.1",
     "grunt-wiredep": "~1.8.0",

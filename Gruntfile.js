@@ -17,7 +17,7 @@ module.exports = function (grunt) {
     cdnify: 'grunt-google-cdn',
     protractor: 'grunt-protractor-runner',
     buildcontrol: 'grunt-build-control',
-    ssh: 'grunt-ssh'
+    scp: 'grunt-scp'
   });
 
   // Time how long tasks take. Can help when optimizing build times
@@ -29,20 +29,22 @@ module.exports = function (grunt) {
     // Project settings
     secret: grunt.file.readJSON('secret.json'),
     pkg: grunt.file.readJSON('package.json'),
-    sshexec: {
-      deploy: {
-        command: [
-          'cd /usr/share/nginx/gottime.dosdev.com/html',
-          'git checkout gh-pages'
-          'git pull origin gh-pages'
-        ],
-        options: {
-          host: '<%= secret.host %>',
-          username: '<%= secret.username %>',
-          password: '<%= secret.password %>'
-        }
-      }
+    scp: {
+    options: {
+        host: '<%= secret.host %>',
+        username: '<%= secret.username %>',
+        password: '<%= secret.password %>'
     },
+    deploy: {
+        files: [{
+            cwd: 'dist',
+            src: '**/*',
+            filter: 'isFile',
+            // path on the server 
+            dest: '/usr/share/nginx/gottime.dosdev.com/html'
+        }]
+    },
+  },
     yeoman: {
       // configurable paths
       client: require('./bower.json').appPath || 'client',
@@ -447,8 +449,8 @@ module.exports = function (grunt) {
       },
       dist: [
         'sass',
-        'imagemin',
-        'svgmin'
+        //'imagemin',
+        //'svgmin'
       ]
     },
 
@@ -623,6 +625,8 @@ module.exports = function (grunt) {
       'watch'
     ]);
   });
+
+  grunt.registerTask('deploy', ['scp']);
 
   grunt.registerTask('server', function () {
     grunt.log.warn('The `server` task has been deprecated. Use `grunt serve` to start a server.');

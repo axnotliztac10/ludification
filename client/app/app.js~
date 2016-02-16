@@ -9,7 +9,7 @@ angular.module('ludificationApp', [
   'ui.router',
   'ngMaterial'
 ]).constant("AppConfig", {
-        socket: 'http:gottime.dosdev.com:7000'
+        socket: 'http://localhost:7000'
     })
   .config(function($mdIconProvider) {
     $mdIconProvider

@@ -23,13 +23,13 @@
     <!-- endbuild -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=RobotoDraft:300,400,500,700,400italic">
   </head>
-  <body ng-app="ludificationApp">
+  <body ng-app="ludificationApp" loading-listener>
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div ui-view=""></div>
+    <div ui-view></div>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
     <script>
@@ -73,6 +73,8 @@
           <script src="app/main_lud/main_lud.controller.js"></script>
           <script src="app/main_lud/main_lud.js"></script>
           <script src="app/ontimeLabel/ontimeLabel.filter.js"></script>
+          <script src="app/team/team.controller.js"></script>
+          <script src="app/team/team.js"></script>
           <script src="components/shell/dialog/dialog.controller.js"></script>
           <script src="components/shell/shell.controller.js"></script>
           <!-- endinjector -->

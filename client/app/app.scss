@@ -18,7 +18,132 @@
 // injector
 @import 'main/main.scss';
 @import 'main_lud/main_lud.scss';
+@import 'team/team.scss';
 // endinjector
 
 
 @import '../bower_components/angular-material/angular-material.scss';
+
+
+
+
+
+
+$baseline-grid: 8px;
+$list-item-primary-avatar-width: $baseline-grid * 7;
+
+body, html {
+  background-color: rgb(15, 18, 28) !important;
+}
+
+md-list-item {
+  background-color: #0f121c;
+  padding: 10px 30px 10px 30px;
+  & > p {
+    margin-left: 10px !important;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    span {
+      font-weight: normal;
+      font-size: 18px;
+    }
+  }
+}
+
+[ui-view] {
+  height: calc(100% - 1px);
+  & > md-content {
+    height: calc(100% - 56px);
+  }
+}
+
+md-content {
+  background-color: rgb(15, 18, 28);
+  md-list {
+    padding-top: 0px;
+  }
+}
+
+$chip-height: 26px;
+$chip-margin: 4px 5px 4px 0px;
+$chip-padding: 0 5px 0 5px;
+
+.md-chips {
+  box-shadow: none !important;
+  padding-left: 0px !important;
+  .md-chip {
+    font-size: 13px;
+    border-radius: 4px !important;
+    background-color: #1d2336;
+    box-shadow: 1px 2px 4px -1px #000;
+    color: #fff;
+    &.timer-logo {
+      margin-right: 0px;
+      border-radius: 4px 0px 0px 4px !important;
+      width: 16px;
+      &.late {
+        background-color: #CC2207 !important;
+      }
+      &.tolerancy {
+        background-color: yellow !important;
+      }
+      &.ontime {
+        background-color: green !important;
+      }
+    }
+  }
+}
+
+.md-button.md-fab {
+  box-shadow: 1px 1px 0px 1px rgba(0, 0, 0, 0.36) !important;
+}
+
+[role="listitem"].animate {
+  transform: translateY(92px);
+  transition: 0.5s ease-in-out;
+}
+
+[role="listitem"].first-element {
+  animation: cubic-bezier(.46, 1.48, .18, .81) slideup 3s;
+  background: #232940;
+  height: 110px;
+  padding: 10px 20px 10px 20px;
+  .md-avatar {
+    width: 75px;
+    height: 75px;
+  }
+  .md-button.md-fab {
+    zoom: 1.2;
+  }
+}
+
+.loading-indicator.getOut {
+  animation: fade-out .5s ease-in;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+}
+
+@keyframes fade-out {
+  0% { opacity: 1; -webkit-transform: scale(1);}
+  85% {opacity: 0.6; -webkit-transform: scale(1.2);}
+  100% {-webkit-transform: scale(.1); opacity: 0;}
+}
+
+@keyframes slideup {
+    0% {
+        transform: translateY(250px);
+    }
+    2% {
+        transform: translateY(250px);
+    }
+    30% {
+        transform: translateY(0px);
+    }
+    96% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(0px); 
+    }
+}

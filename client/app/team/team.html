@@ -1,0 +1,32 @@
+<div flex layout-fill layout="row">
+	<md-content flex>
+		<div class="team_header" layout="row" layout-align="center center">
+		  <div flex style="text-align: center;"><img src="assets/images/tean_logo.png" class="team_logo"></div>
+		  <div flex>
+		  	<h4>Equipo</h4>
+		  	<h3>Chilpancingo</h3>
+		  	<md-chip class="late timer-logo">9</md-chip>
+      		<md-chip>Integrantes</md-chip>
+		  </div>
+		  <div flex>
+		  	<md-button class="md-primary md-fab">9ª</md-button>
+		  </div>
+		</div>
+		<md-list ng-cloak>
+		  <md-list-item ng-repeat="person in persons" ng-class="{'animate': animateList, 'first-element': $first}">
+
+		    <img src="assets/images/user1.png" class="md-avatar"/>
+		    <p> {{ person.name }}  <span>{{person.ontime | ontimeLabel}}</span> 
+		    <br>
+		    <md-chips>
+	      		<md-chip>Digital</md-chip>
+	      		<md-chip>Chilpancingo</md-chip>
+	      		<md-chip ng-class="{'late': person.timeLabel == 'late', 'ontime': person.timeLabel == 'ontime', 'tolerancy': person.timeLabel == 'tolerancy' }" class="timer-logo"></md-chip>
+	      		<md-chip>{{ person.count }}</md-chip>
+			</md-chips>
+	      	</p>
+			<md-button ng-click="newPerson()" class="md-primary md-fab">{{person.time | date:"h:mm"}}</md-button>
+		  </md-list-item>
+		</md-list>
+	</md-content>
+</div>

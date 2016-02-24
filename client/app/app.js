@@ -9,7 +9,7 @@ angular.module('ludificationApp', [
   'ui.router',
   'ngMaterial'
 ]).constant("AppConfig", {
-        socket: 'http:gottime.dosdev.com:7000'
+        socket: 'http://localhost:7000/'
     })
   .config(function($mdIconProvider) {
     $mdIconProvider
@@ -36,4 +36,70 @@ angular.module('ludificationApp', [
       .otherwise('/');
 
     $locationProvider.html5Mode(false);
-  });
+  }).config(['$httpProvider', function($httpProvider) {
+    $httpProvider.interceptors.push('LoadingListener');
+}])
+.factory('LoadingListener', [ '$q', '$rootScope', function($q, $rootScope) {
+    var reqsActive = 0;
+
+    function onResponse() {
+        reqsActive--;
+        if (reqsActive === 0) {
+            $rootScope.$broadcast('loading:completed');
+        }
+    }
+
+    return {
+        'request': function(config) {
+            if (reqsActive === 0) {
+                $rootScope.$broadcast('loading:started');
+            }
+            reqsActive++;
+            return config;
+        },
+        'response': function(response) {
+            if (!response || !response.config) {
+                return response;
+            }
+            onResponse();
+            return response;
+        },
+        'responseError': function(rejection) {
+            if (!rejection || !rejection.config) {
+                return $q.reject(rejection);
+            }
+            onResponse();
+            return $q.reject(rejection);
+        },
+        isLoadingActive : function() {
+            return reqsActive === 0;
+        }
+    };
+}])
+
+.directive('loadingListener', [ '$rootScope', 'LoadingListener', '$timeout', function($rootScope, LoadingListener, $timeout) {
+    var button = '<md-progress-circular style="transform: translate(-50%, -50%);" md-mode="indeterminate" md-diameter="96" aria-valuemin="0" aria-valuemax="100" role="progressbar" class="ng-scope" style="width: 96px; height: 96px;"><div class="md-scale-wrapper md-mode-indeterminate" style="transform: translate(-50%, -50%) scale(0.96);"><div class="md-spinner-wrapper"><div class="md-inner"><div class="md-gap"></div><div class="md-left"><div class="md-half-circle"></div></div><div class="md-right"><div class="md-half-circle"></div></div></div></div></div></md-progress-circular>'
+    var circle = '<div style="transform: translate(50%, 350px);">'+button+'</div>'
+    var tpl = '<div class="loading-indicator" style="background-color: #0f121c;position: fixed; height: 100%; width: 100%; z-index: 1000">'+circle+'</div>';
+
+    return {
+        restrict: 'CA',
+        link: function linkFn(scope, elem, attr) {
+            var indicator = angular.element(tpl);
+            elem.prepend(indicator);
+
+            if (!LoadingListener.isLoadingActive()) {
+                console.log('same');indicator.css('display', 'none');
+            }
+
+            $rootScope.$on('loading:started', function () {
+                console.log('nosame');indicator.css('display', 'block');
+            });
+            $rootScope.$on('loading:completed', function () {
+                $timeout(function () {
+                  console.log('same');indicator.addClass('getOut');
+                }, 1500);
+            });
+        }
+    };
+}]);;

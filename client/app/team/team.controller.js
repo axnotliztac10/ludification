@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('ludificationApp')
-  .controller('MainLudCtrl', function ($scope, $timeout, SocketIO) {
+  .controller('TeamCtrl', function ($scope) {
 
     $scope.persons = [
 	    { time: '1288323623006', name: 'Sergio Perez', ontime: true, count: 3, timeLabel: 'late' },
@@ -29,16 +29,4 @@ angular.module('ludificationApp')
 			$scope.persons.unshift(person);
 		}, 500);
 	};
-
   });
-
-angular.module('ludificationApp')
-  .service('SocketIO', function ($rootScope, AppConfig) {
-  		var socket = io(AppConfig.socket);
-	   	socket.on('newArrival', function (data) {
-	    	$rootScope.$broadcast('newPerson', data);
-	    });
-
-	    return socket;
-  });
-

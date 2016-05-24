@@ -2,6 +2,12 @@ var mongoose = require('mongoose');
 
 var Schema = mongoose.Schema;
 
+var recordSchema = new Schema({
+  late: { type: Number, default: 0 },
+  tolerancy: { type: Number, default: 0 },
+  ontime: { type: Number, default: 0 }
+});
+
 var PersonSchema = new Schema({
   ID: Number,
   User_PIN: Number,
@@ -24,9 +30,12 @@ var PersonSchema = new Schema({
   VaildCount: Number,
   Timezone1: Number,
   Timezone2: Number,
-  Timezone3: Number
+  Timezone3: Number,
+  Area: String,
+  Team: String,
+  Record: { type: [recordSchema], required: true }
 });
 
-var Person = mongoose.model('Person', PersonSchema);
+var Person = mongoose.model('Employee', new Schema({ any: {} }, {collection: 'Employee'}));
 
 module.exports = Person;

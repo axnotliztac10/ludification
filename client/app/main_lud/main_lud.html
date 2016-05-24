@@ -12,8 +12,8 @@
 		  <!--md-subheader class="md-no-sticky">Inicio</md-subheader>-->
 		  <md-list-item ng-repeat="person in persons" ng-class="{'animate': animateList, 'first-element': $first}">
 
-		    <img src="assets/images/user1.png" class="md-avatar"/>
-		    <p> {{ person.name }}  <span>{{person.ontime | ontimeLabel}}</span> 
+		    <div class="md-avatar" style="background-image: url('{{person.photo}}'); background-position: center center; background-size: cover;"/></div>
+		    <p> {{ person.name }}  <span>{{person.ontime | ontimeLabel}}</span>
 		    <br>
 		    <md-chips>
 	      		<md-chip>Digital</md-chip>

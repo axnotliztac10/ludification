@@ -89,17 +89,30 @@ angular.module('ludificationApp', [
             elem.prepend(indicator);
 
             if (!LoadingListener.isLoadingActive()) {
-                console.log('same');indicator.css('display', 'none');
+                indicator.css('display', 'none');
             }
 
             $rootScope.$on('loading:started', function () {
-                console.log('nosame');indicator.css('display', 'block');
+                indicator.css('display', 'block');
             });
             $rootScope.$on('loading:completed', function () {
                 $timeout(function () {
-                  console.log('same');indicator.addClass('getOut');
+                  indicator.addClass('getOut');
                 }, 1500);
             });
         }
     };
-}]);;
+}])
+
+.directive('imgMeta', function () {
+  return {
+    scope: {
+        imgMeta: '=imgMeta'
+    },
+    restrict: 'AE',
+    link: function (scope, elem, attr) {
+      console.log(scope.imgMeta)
+      angular.element(elem).attr("src", scope.imgMeta);
+    }
+  }
+});

@@ -2,40 +2,32 @@ var mongoose = require('mongoose');
 
 var Schema = mongoose.Schema;
 
-var recordSchema = new Schema({
-  late: { type: Number, default: 0 },
-  tolerancy: { type: Number, default: 0 },
-  ontime: { type: Number, default: 0 }
+var RecordSchema = new Schema({
+  late: { type: Date, required: true },
+  tolerancy: { type: Date, required: true },
+  ontime: { type: Date, required: true }
 });
 
-var PersonSchema = new Schema({
-  ID: Number,
-  User_PIN: Number,
-  Privilege: Number,
-  Name: String,
-  Password: Number,
-  Face_Group_ID: Number,
-  Acc_Group_ID: Number,
-  Dept_ID: Number,
-  Is_Group_TZ: Number,
-  Verify_Type: Number,
-  Main_Card: Number,
-  Vice_Card: String,
-  CREATE_ID: String,
-  MODIFY_TIME: String,
-  SEND_FLAG: Number,
-  Expires: Number,
-  StartDatetime: Number,
-  EndDatetime: Number,
-  VaildCount: Number,
-  Timezone1: Number,
-  Timezone2: Number,
-  Timezone3: Number,
-  Area: String,
-  Team: String,
-  Record: { type: [recordSchema], required: true }
+var TeamSchema = new Schema({
+  Name: { type: String, required: true },
+  Description: { type: String },
+  Schedule: { type: Object, required: true }
 });
 
-var Person = mongoose.model('Employee', new Schema({ any: {} }, {collection: 'Employee'}));
+var DepartmentSchema = new Schema({
+  Name: { type: String, required: true },
+  Description: { type: String },
+  Schedule: { type: Object, required: true }
+});
 
-module.exports = Person;
+var EmployeeSchema = new Schema({
+  EmployeeID: { type: Number, required: true },
+  Name: { type: Number, required: true },
+  Record: { type: [RecordSchema], required: false },
+  Team: { type: TeamSchema, required: false },
+  Department: { type: DepartmentSchema, required: false }
+});
+
+var Employee = mongoose.model('Employee', EmployeeSchema);
+
+module.exports = Employee;

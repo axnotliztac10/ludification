@@ -22,10 +22,10 @@ var DepartmentSchema = new Schema({
 
 var EmployeeSchema = new Schema({
   EmployeeID: { type: Number, required: true },
-  Name: { type: Number, required: true },
+  Name: { type: String, required: true },
   Record: { type: [RecordSchema], required: false },
-  Team: { type: TeamSchema, required: false },
-  Department: { type: DepartmentSchema, required: false }
+  Team: { type: [TeamSchema], required: false },
+  Department: { type: [DepartmentSchema], required: false }
 });
 
 var Employee = mongoose.model('Employee', EmployeeSchema);

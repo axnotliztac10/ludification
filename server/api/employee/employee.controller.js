@@ -22,7 +22,6 @@ fs.readdir( './client/assets/images/employees', function (err, files) {
 }); 
 
  exports.index = function(req, res) {
-
  	Employee.findOne({'EmployeeId': req.body.user_id}, function(err, employee) {
  		if (err) throw err;
  		if (!employee) {
@@ -44,7 +43,6 @@ fs.readdir( './client/assets/images/employees', function (err, files) {
  		res.json(Employee);
  		req.app.get('io').sockets.emit('newArrival', Employee)
  	});
-
  };
 
  exports.loadDump = function(req, res) {
@@ -52,13 +50,13 @@ fs.readdir( './client/assets/images/employees', function (err, files) {
 
  	var setResults = function (employees) {
  		employees.forEach(function(item) {
-	 		
  			var newEmployee = {
 				EmployeeID: item.User_PIN,
 				Name: item.Name
 			};
 
 	 		var NewEmployee = new Employee(newEmployee);
+	 		console.log(NewEmployee);
 
 	 		NewEmployee.save(function(err) {
 	 			if (err) throw err;

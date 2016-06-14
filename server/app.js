@@ -13,6 +13,7 @@ var config = require('./config/environment');
 var app = express();
 var server = require('http').createServer(app);
 var fs = require('fs');
+
 require('./config/express')(app);
 require('./routes')(app);
 
@@ -31,7 +32,6 @@ io.on('connection', function (socket) {
 });
 
 app.set('io', io);
-
 
 server.listen(config.port, config.ip, function () {
   console.log('Express server listening on %d, in %s mode', config.port, app.get('env'));

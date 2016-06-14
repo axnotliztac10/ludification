@@ -1,0 +1,56 @@
+[{
+		"Name": "PRESIDENCIA",
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		}
+	},
+	{
+		"Name": "ADMINISTRACION",
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		}
+	},
+	{
+		"Name": "COMERCIAL",
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		}
+	},
+	{
+		"Name": "OPERACIONES",
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		}
+	},
+	{
+		"Name": "PYMES",
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		}
+	},
+	{
+		"Name": "DIGITAL",
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		}
+	},
+	{
+		"Name": "GOBIERNO",
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		}
+	},
+	{
+		"Name": "PROYECTOS",
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		}
+	}]

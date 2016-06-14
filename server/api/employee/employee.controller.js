@@ -9,67 +9,82 @@
 
  'use strict';
 
- var Employee = require('../../models/EmployeeModel.js');
- var fs = require('fs');
- var images  = [];
+var Employee = require('../../models/mainModels.js').Employee;
+var Department = require('../../models/mainModels.js').Department;
+var Record = require('../../models/mainModels.js').Record; 
 
-fs.readdir( './client/assets/images/employees', function (err, files) { 
-	if (!err) {
-		images = files;
-	} else {
-		throw err; 
-	}
-}); 
+var fs = require('fs'),
+	moment = require('moment');
 
- exports.index = function(req, res) {
- 	Employee.findOne({'EmployeeId': req.body.user_id}, function(err, employee) {
- 		if (err) throw err;
- 		if (!employee) {
- 			res.json({err: 'no employee'});
- 			return;
- 		};
+exports.index = function(req, res) {
 
-		var name = employee.Name.toLowerCase();
-		var nameUpp = name.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
-		var photo = '../person.jpg';
-		
-		images.forEach(function (item) {
-			if (item.search(nameUpp) > -1) photo = item;
+	var getRecordCount = function (label, records) {
+		var count = 0;
+		records.forEach(function (item) {
+			if (item.timeLabel == label) count++;
 		});
+		return count;
+	};
 
-		var Employee = JSON.parse(JSON.stringify(employee));
-		Employee.Photo = 'http://' + req.headers.host + '/assets/images/employees/' + photo;
+	var sendSocket = function (data) {
+		req.app.get('io').sockets.emit('newArrival', data);
+	};
 
- 		res.json(Employee);
- 		req.app.get('io').sockets.emit('newArrival', Employee)
- 	});
- };
+	var setNew = function (new_id) {
+		var NewEmployee = new Employee({
+				EmployeeID: new_id,
+				Name: 'Unknown'
+			});
 
- exports.loadDump = function(req, res) {
- 	var obj;
+ 		NewEmployee.save(function(err, res) {
+ 			if (err) throw err;
+ 			sendSocket(res);
+ 			console.log('User saved successfully!');
+ 		});
+	};
 
- 	var setResults = function (employees) {
- 		employees.forEach(function(item) {
- 			var newEmployee = {
-				EmployeeID: item.User_PIN,
-				Name: item.Name
-			};
+	var getTimeLabel = function (department) {
 
-	 		var NewEmployee = new Employee(newEmployee);
-	 		console.log(NewEmployee);
+		var resT = {
+			time: moment()
+		},
+		arriveDueTime = (department.Schedule.arrive == 'created_at') ? moment().hours(9).minutes(0).seconds(0) : department.Schedule.arrive;
 
-	 		NewEmployee.save(function(err) {
-	 			if (err) throw err;
-	 			console.log('User saved successfully!');
-	 		});
-	 	});
-	 	res.json({
-	 		result: 'ok'
-	 	});
- 	};
+		if (resT.time.diff(arriveDueTime, 'minutes') <= 0) {
+			resT.timeLabel = 'ontime';
+		} else if (resT.time.diff(arriveDueTime, 'minutes') > 15) {
+			resT.timeLabel = 'late';
+		} else {
+			resT.timeLabel = 'tolerancy';
+		}
 
-	fs.readFile(__dirname + '/../../models/data.json', 'utf8', function (err, data) {
-	  if (err) throw err;
-	  setResults(JSON.parse(data));
+		return resT;
+	};
+
+	Employee.findOne({'EmployeeID': req.body.user_id}).exec(function(err, employee) {
+		if (err) throw err;		
+		if (!employee) {
+			setNew(req.body.user_id);
+			res.json({err: 'no employee'});
+			return;
+		};
+
+		var newRecordBody = getTimeLabel(employee.Department),
+			newRecord = new Record(newRecordBody);
+		
+		var photo = '../person.jpg',
+			photoUrl = './client/assets/images/employees/' + employee.EmployeeID + '.jpg';
+
+		if (fs.existsSync(photoUrl)) { photo = employee.EmployeeID + '.jpg'; }
+
+		employee.Record.unshift(newRecord);
+		employee.save(function (err, employeeUpdated) {
+				var EmployeeRes = JSON.parse(JSON.stringify(employeeUpdated));
+
+				EmployeeRes.Photo = 'http://' + req.headers.host + '/assets/images/employees/' + photo;
+				EmployeeRes.Record[0].count = getRecordCount(newRecordBody.timeLabel, employeeUpdated.Record);
+				sendSocket(EmployeeRes);
+				res.json(EmployeeRes);
+		});
 	});
- };
+};

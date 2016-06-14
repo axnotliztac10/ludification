@@ -1,0 +1,2743 @@
+[{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fb66"
+	},
+	"EmployeeID": 198,
+	"Name": "CARCAñO UGARTE MERCE",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "NO DEPARTMENT"
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fb5d"
+	},
+	"EmployeeID": 3,
+	"Name": "DIBILDOX VALLS JORGE",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "NO DEPARTMENT"
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fb65"
+	},
+	"EmployeeID": 65,
+	"Name": "SAAVEDRA CORONA RODR",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "NO DEPARTMENT"
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fb64"
+	},
+	"EmployeeID": 18,
+	"Name": "Sanchez Badillo Elvira",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"__v": 0,
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "ADMINISTRACION",
+		"_id": {
+			"$oid": "575f82ee0c17cc2637beee31"
+		}
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fb5c"
+	},
+	"EmployeeID": 1,
+	"Name": "Sena Alvarez Alejandro",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"__v": 0,
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "DIGITAL",
+		"_id": {
+			"$oid": "575f82ee0c17cc2637beee35"
+		}
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fb61"
+	},
+	"EmployeeID": 798,
+	"Name": "Soriano Acevedo Antonio",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"__v": 0,
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "ADMINISTRACION",
+		"_id": {
+			"$oid": "575f82ee0c17cc2637beee31"
+		}
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fb6a"
+	},
+	"EmployeeID": 953,
+	"Name": "Ricaño Castro Fabio Cesar",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"__v": 0,
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "ADMINISTRACION",
+		"_id": {
+			"$oid": "575f82ee0c17cc2637beee31"
+		}
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fb69"
+	},
+	"EmployeeID": 797,
+	"Name": "Paredes Pacheco Mariana Leticia",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"__v": 0,
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "ADMINISTRACION",
+		"_id": {
+			"$oid": "575f82ee0c17cc2637beee31"
+		}
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fb5e"
+	},
+	"EmployeeID": 4,
+	"Name": "MUCIÑO GADEA PEDRO",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "NO DEPARTMENT"
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fb67"
+	},
+	"EmployeeID": 683,
+	"Name": "Reyna Sanchez Mario",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"__v": 0,
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "ADMINISTRACION",
+		"_id": {
+			"$oid": "575f82ee0c17cc2637beee31"
+		}
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fb5f"
+	},
+	"EmployeeID": 311,
+	"Name": "Fernandez Ardavin Jose Maria",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"__v": 0,
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "ADMINISTRACION",
+		"_id": {
+			"$oid": "575f82ee0c17cc2637beee31"
+		}
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fb6d"
+	},
+	"EmployeeID": 140,
+	"Name": "Roa Garcia Jorge",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"__v": 0,
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "ADMINISTRACION",
+		"_id": {
+			"$oid": "575f82ee0c17cc2637beee31"
+		}
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fb6b"
+	},
+	"EmployeeID": 954,
+	"Name": "Bello Dorantes Yazmin",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"__v": 0,
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "ADMINISTRACION",
+		"_id": {
+			"$oid": "575f82ee0c17cc2637beee31"
+		}
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fb60"
+	},
+	"EmployeeID": 351,
+	"Name": "Colin Garcia Eduardo",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"__v": 0,
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "ADMINISTRACION",
+		"_id": {
+			"$oid": "575f82ee0c17cc2637beee31"
+		}
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fb76"
+	},
+	"EmployeeID": 1009,
+	"Name": "HERNANDEZ RAMIREZ DA",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "NO DEPARTMENT"
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fb78"
+	},
+	"EmployeeID": 335,
+	"Name": "GOMEZ HERRERA JONATH",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "NO DEPARTMENT"
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fb79"
+	},
+	"EmployeeID": 430,
+	"Name": "DE LA TORRE HERNANDE",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "NO DEPARTMENT"
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fb6f"
+	},
+	"EmployeeID": 347,
+	"Name": "Ortiz Arias Braulio Modesto",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"__v": 0,
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "OPERACIONES",
+		"_id": {
+			"$oid": "575f82ee0c17cc2637beee33"
+		}
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fb7a"
+	},
+	"EmployeeID": 980,
+	"Name": "SANCHEZ MARTINEZ FAN",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "NO DEPARTMENT"
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fb7d"
+	},
+	"EmployeeID": 1005,
+	"Name": "GALDEANO JUAREZ ENRI",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "NO DEPARTMENT"
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fb7e"
+	},
+	"EmployeeID": 11,
+	"Name": "LEAL ROJANO ALEJANDR",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "NO DEPARTMENT"
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fb6e"
+	},
+	"EmployeeID": 338,
+	"Name": "Correa Uriostegui Llocelen",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"__v": 0,
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "ADMINISTRACION",
+		"_id": {
+			"$oid": "575f82ee0c17cc2637beee31"
+		}
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fb73"
+	},
+	"EmployeeID": 655,
+	"Name": "Miranda Perez Luis Ivan",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"__v": 0,
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "ADMINISTRACION",
+		"_id": {
+			"$oid": "575f82ee0c17cc2637beee31"
+		}
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fb7f"
+	},
+	"EmployeeID": 107,
+	"Name": "HERNANDEZ ZAPATA AND",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "NO DEPARTMENT"
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fb7b"
+	},
+	"EmployeeID": 8,
+	"Name": "Mendez Caballero Juana",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"__v": 0,
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "PRESIDENCIA",
+		"_id": {
+			"$oid": "575f82ee0c17cc2637beee30"
+		}
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fb70"
+	},
+	"EmployeeID": 383,
+	"Name": "Zamora Martinez Esperanza",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"__v": 0,
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "ADMINISTRACION",
+		"_id": {
+			"$oid": "575f82ee0c17cc2637beee31"
+		}
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fb85"
+	},
+	"EmployeeID": 972,
+	"Name": "VILLAGRANA RUIZ ARTU",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "NO DEPARTMENT"
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fb74"
+	},
+	"EmployeeID": 790,
+	"Name": "Suarez Almeida Daniela",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"__v": 0,
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "ADMINISTRACION",
+		"_id": {
+			"$oid": "575f82ee0c17cc2637beee31"
+		}
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fb80"
+	},
+	"EmployeeID": 345,
+	"Name": "Olivares Fraga Francisco Javier",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"__v": 0,
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "COMERCIAL",
+		"_id": {
+			"$oid": "575f82ee0c17cc2637beee32"
+		}
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fb82"
+	},
+	"EmployeeID": 416,
+	"Name": "Rosas Delgadillo Oscar",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"__v": 0,
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "COMERCIAL",
+		"_id": {
+			"$oid": "575f82ee0c17cc2637beee32"
+		}
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fb71"
+	},
+	"EmployeeID": 428,
+	"Name": "Lopez Soto Sonia",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"__v": 0,
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "ADMINISTRACION",
+		"_id": {
+			"$oid": "575f82ee0c17cc2637beee31"
+		}
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fb7c"
+	},
+	"EmployeeID": 23,
+	"Name": "FARAH RUBIERA EDGAR",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "NO DEPARTMENT"
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fb63"
+	},
+	"EmployeeID": 1003,
+	"Name": "De Dios Mendoza Jorge",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"__v": 0,
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "ADMINISTRACION",
+		"_id": {
+			"$oid": "575f82ee0c17cc2637beee31"
+		}
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fb68"
+	},
+	"EmployeeID": 694,
+	"Name": "Sanchez Rodriguez Nallely",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"__v": 0,
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "ADMINISTRACION",
+		"_id": {
+			"$oid": "575f82ee0c17cc2637beee31"
+		}
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fb88"
+	},
+	"EmployeeID": 16,
+	"Name": "Bustamante Lopez Jorge Enrique",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"__v": 0,
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "OPERACIONES",
+		"_id": {
+			"$oid": "575f82ee0c17cc2637beee33"
+		}
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fb84"
+	},
+	"EmployeeID": 518,
+	"Name": "Castillo Hernandez Carlos",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"__v": 0,
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "COMERCIAL",
+		"_id": {
+			"$oid": "575f82ee0c17cc2637beee32"
+		}
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fb75"
+	},
+	"EmployeeID": 934,
+	"Name": "Gonzalez Reyes Diego Antonio",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"__v": 0,
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "ADMINISTRACION",
+		"_id": {
+			"$oid": "575f82ee0c17cc2637beee31"
+		}
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fb8a"
+	},
+	"EmployeeID": 130,
+	"Name": "Labansat Hornelas Ludovic",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"__v": 0,
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "OPERACIONES",
+		"_id": {
+			"$oid": "575f82ee0c17cc2637beee33"
+		}
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fb8f"
+	},
+	"EmployeeID": 957,
+	"Name": "GRADOS LOPEZ INGRID",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "NO DEPARTMENT"
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fb89"
+	},
+	"EmployeeID": 115,
+	"Name": "Gonzalez Castaño Leonardo",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"__v": 0,
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "OPERACIONES",
+		"_id": {
+			"$oid": "575f82ee0c17cc2637beee33"
+		}
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fb8e"
+	},
+	"EmployeeID": 882,
+	"Name": "MIRANDA ARIAS MARISO",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "NO DEPARTMENT"
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fb93"
+	},
+	"EmployeeID": 947,
+	"Name": "HERNANDEZ ALMARAZ SU",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "NO DEPARTMENT"
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fb94"
+	},
+	"EmployeeID": 302,
+	"Name": "ZALDIVAR RAMOS RAFAE",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "NO DEPARTMENT"
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fb87"
+	},
+	"EmployeeID": 15,
+	"Name": "De Silva Cumplido Andres",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"__v": 0,
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "OPERACIONES",
+		"_id": {
+			"$oid": "575f82ee0c17cc2637beee33"
+		}
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fb86"
+	},
+	"EmployeeID": 1016,
+	"Name": "Gil Cervera Luis Miguel",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"__v": 0,
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "COMERCIAL",
+		"_id": {
+			"$oid": "575f82ee0c17cc2637beee32"
+		}
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fb8d"
+	},
+	"EmployeeID": 536,
+	"Name": "Eslava Pineda Eric",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"__v": 0,
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "OPERACIONES",
+		"_id": {
+			"$oid": "575f82ee0c17cc2637beee33"
+		}
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fb8b"
+	},
+	"EmployeeID": 270,
+	"Name": "Macias Pasco Yvette Yanira",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"__v": 0,
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "OPERACIONES",
+		"_id": {
+			"$oid": "575f82ee0c17cc2637beee33"
+		}
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fb72"
+	},
+	"EmployeeID": 626,
+	"Name": "Santana Gutierrez Bertha",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"__v": 0,
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "ADMINISTRACION",
+		"_id": {
+			"$oid": "575f82ee0c17cc2637beee31"
+		}
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fb9b"
+	},
+	"EmployeeID": 788,
+	"Name": "Morales Yañez Rodrigo",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"__v": 0,
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "DIGITAL",
+		"_id": {
+			"$oid": "575f82ee0c17cc2637beee35"
+		}
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fb9a"
+	},
+	"EmployeeID": 787,
+	"Name": "Rosas Quiroz Gustavo Adolfo",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"__v": 0,
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "DIGITAL",
+		"_id": {
+			"$oid": "575f82ee0c17cc2637beee35"
+		}
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fb9d"
+	},
+	"EmployeeID": 857,
+	"Name": "Perez Gomez Sergio",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"__v": 0,
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "DIGITAL",
+		"_id": {
+			"$oid": "575f82ee0c17cc2637beee35"
+		}
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fb9c"
+	},
+	"EmployeeID": 831,
+	"Name": "Etchegaray Ibarra Sofia",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"__v": 0,
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "DIGITAL",
+		"_id": {
+			"$oid": "575f82ee0c17cc2637beee35"
+		}
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fb99"
+	},
+	"EmployeeID": 786,
+	"Name": "Gonzalez Hernandez Abel",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"__v": 0,
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "DIGITAL",
+		"_id": {
+			"$oid": "575f82ee0c17cc2637beee35"
+		}
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fb9e"
+	},
+	"EmployeeID": 1002,
+	"Name": "Sahade Guzman Miguel Angel",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"__v": 0,
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "DIGITAL",
+		"_id": {
+			"$oid": "575f82ee0c17cc2637beee35"
+		}
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fb83"
+	},
+	"EmployeeID": 420,
+	"Name": "VARAS ROJANO ABRAHAM",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "NO DEPARTMENT"
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fb9f"
+	},
+	"EmployeeID": 1007,
+	"Name": "Ceniceros Marquez Bianca Janet",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"__v": 0,
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "DIGITAL",
+		"_id": {
+			"$oid": "575f82ee0c17cc2637beee35"
+		}
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fb62"
+	},
+	"EmployeeID": 988,
+	"Name": "Chang Alvarez Josue",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"__v": 0,
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "ADMINISTRACION",
+		"_id": {
+			"$oid": "575f82ee0c17cc2637beee31"
+		}
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fb81"
+	},
+	"EmployeeID": 406,
+	"Name": "RAMIREZ YAñEZ ANDREA",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "NO DEPARTMENT"
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fba2"
+	},
+	"EmployeeID": 431,
+	"Name": "Martinez Garcia Estela",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"__v": 0,
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "ADMINISTRACION",
+		"_id": {
+			"$oid": "575f82ee0c17cc2637beee31"
+		}
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fb95"
+	},
+	"EmployeeID": 391,
+	"Name": "Sierra Herbert Jorge",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"__v": 0,
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "PROYECTOS",
+		"_id": {
+			"$oid": "575f82ee0c17cc2637beee37"
+		}
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fba1"
+	},
+	"EmployeeID": 25,
+	"Name": "Guerrero Gonzalez Eduardo",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"__v": 0,
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "DIGITAL",
+		"_id": {
+			"$oid": "575f82ee0c17cc2637beee35"
+		}
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fb92"
+	},
+	"EmployeeID": 920,
+	"Name": "Romero Cruz Miguel Angel",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"__v": 0,
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "GOBIERNO",
+		"_id": {
+			"$oid": "575f82ee0c17cc2637beee36"
+		}
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fb6c"
+	},
+	"EmployeeID": 981,
+	"Name": "Mendez Macias Paulina",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"__v": 0,
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "ADMINISTRACION",
+		"_id": {
+			"$oid": "575f82ee0c17cc2637beee31"
+		}
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fba0"
+	},
+	"EmployeeID": 1008,
+	"Name": "Murillo Calderon Rodrigo",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"__v": 0,
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "DIGITAL",
+		"_id": {
+			"$oid": "575f82ee0c17cc2637beee35"
+		}
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fba3"
+	},
+	"EmployeeID": 634,
+	"Name": "Martinez Santos Jonathan",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"__v": 0,
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "ADMINISTRACION",
+		"_id": {
+			"$oid": "575f82ee0c17cc2637beee31"
+		}
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fb8c"
+	},
+	"EmployeeID": 374,
+	"Name": "Orduño Cabrera Maria",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"__v": 0,
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "OPERACIONES",
+		"_id": {
+			"$oid": "575f82ee0c17cc2637beee33"
+		}
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fba4"
+	},
+	"EmployeeID": 364,
+	"Name": "Hernandez Ortiz Carlos Alberto",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"__v": 0,
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "COMERCIAL",
+		"_id": {
+			"$oid": "575f82ee0c17cc2637beee32"
+		}
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fba5"
+	},
+	"EmployeeID": 662,
+	"Name": "Diego Feliciano German",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"__v": 0,
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "ADMINISTRACION",
+		"_id": {
+			"$oid": "575f82ee0c17cc2637beee31"
+		}
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fb90"
+	},
+	"EmployeeID": 970,
+	"Name": "Bocanegra Cano Maribel",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"__v": 0,
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "OPERACIONES",
+		"_id": {
+			"$oid": "575f82ee0c17cc2637beee33"
+		}
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fba9"
+	},
+	"EmployeeID": 958,
+	"Name": "MENDEZ CORDERO NATAL",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "NO DEPARTMENT"
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fba6"
+	},
+	"EmployeeID": 686,
+	"Name": "Rivera Yañez Miguel Angel",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"__v": 0,
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "COMERCIAL",
+		"_id": {
+			"$oid": "575f82ee0c17cc2637beee32"
+		}
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fb77"
+	},
+	"EmployeeID": 7,
+	"Name": "Mejia Sanchez Jonathan",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"__v": 0,
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "OPERACIONES",
+		"_id": {
+			"$oid": "575f82ee0c17cc2637beee33"
+		}
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fb97"
+	},
+	"EmployeeID": 779,
+	"Name": "Zubiria Molina Thomas Daniel",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"__v": 0,
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "DIGITAL",
+		"_id": {
+			"$oid": "575f82ee0c17cc2637beee35"
+		}
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fba8"
+	},
+	"EmployeeID": 948,
+	"Name": "Gonzalez Oliver Hernan",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"__v": 0,
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "COMERCIAL",
+		"_id": {
+			"$oid": "575f82ee0c17cc2637beee32"
+		}
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fb96"
+	},
+	"EmployeeID": 451,
+	"Name": "Nova Duran Salvador",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"__v": 0,
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "PROYECTOS",
+		"_id": {
+			"$oid": "575f82ee0c17cc2637beee37"
+		}
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fb98"
+	},
+	"EmployeeID": 781,
+	"Name": "Reyes Medina Susana",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"__v": 0,
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "DIGITAL",
+		"_id": {
+			"$oid": "575f82ee0c17cc2637beee35"
+		}
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fba7"
+	},
+	"EmployeeID": 821,
+	"Name": "Hernandez Granillo Erilu",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"__v": 0,
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "COMERCIAL",
+		"_id": {
+			"$oid": "575f82ee0c17cc2637beee32"
+		}
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fbac"
+	},
+	"EmployeeID": 767,
+	"Name": "Arevalo Zarate Claudia Anabel",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"__v": 0,
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "GOBIERNO",
+		"_id": {
+			"$oid": "575f82ee0c17cc2637beee36"
+		}
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fb91"
+	},
+	"EmployeeID": 108,
+	"Name": "Alvarado Macias Oscar",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"__v": 0,
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "GOBIERNO",
+		"_id": {
+			"$oid": "575f82ee0c17cc2637beee36"
+		}
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fbae"
+	},
+	"EmployeeID": 593,
+	"Name": "ARRIAGA PALMEñO ERIC",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "NO DEPARTMENT"
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fbaf"
+	},
+	"EmployeeID": 638,
+	"Name": "AYALA RODRIGUEZ ABRA",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "NO DEPARTMENT"
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fbab"
+	},
+	"EmployeeID": 701,
+	"Name": "Ceballos Martinez Fernando",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"__v": 0,
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "OPERACIONES",
+		"_id": {
+			"$oid": "575f82ee0c17cc2637beee33"
+		}
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fbb1"
+	},
+	"EmployeeID": 695,
+	"Name": "MAYA CURIEL ENRIQUE",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "NO DEPARTMENT"
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fbb0"
+	},
+	"EmployeeID": 643,
+	"Name": "Alcaraz Farias Mario Rafael",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"__v": 0,
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "ADMINISTRACION",
+		"_id": {
+			"$oid": "575f82ee0c17cc2637beee31"
+		}
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fbaa"
+	},
+	"EmployeeID": 568,
+	"Name": "Gutierrez Castañeda Mariana",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"__v": 0,
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "OPERACIONES",
+		"_id": {
+			"$oid": "575f82ee0c17cc2637beee33"
+		}
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fbb4"
+	},
+	"EmployeeID": 998,
+	"Name": "PIñA JIMENEZ ALAN",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "NO DEPARTMENT"
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fbad"
+	},
+	"EmployeeID": 853,
+	"Name": "Chinchilla Lopez Anakaren",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"__v": 0,
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "PROYECTOS",
+		"_id": {
+			"$oid": "575f82ee0c17cc2637beee37"
+		}
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fbb8"
+	},
+	"EmployeeID": 667,
+	"Name": "FARAH CHAJIN JOSE MA",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "NO DEPARTMENT"
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fbb2"
+	},
+	"EmployeeID": 702,
+	"Name": "Arauz Cervantes Katia Giselle",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"__v": 0,
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "ADMINISTRACION",
+		"_id": {
+			"$oid": "575f82ee0c17cc2637beee31"
+		}
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fbb6"
+	},
+	"EmployeeID": 927,
+	"Name": "Espinoza Gutierrez Karen",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"__v": 0,
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "OPERACIONES",
+		"_id": {
+			"$oid": "575f82ee0c17cc2637beee33"
+		}
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fbb3"
+	},
+	"EmployeeID": 969,
+	"Name": "Tinoco Romero Berenice",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"__v": 0,
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "ADMINISTRACION",
+		"_id": {
+			"$oid": "575f82ee0c17cc2637beee31"
+		}
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fbb9"
+	},
+	"EmployeeID": 917,
+	"Name": "Romero Hurtado Alexa Marlene",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"__v": 0,
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "COMERCIAL",
+		"_id": {
+			"$oid": "575f82ee0c17cc2637beee32"
+		}
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fbbd"
+	},
+	"EmployeeID": 709,
+	"Name": "CORTES ARRIAGA JAIR",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "NO DEPARTMENT"
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fbbe"
+	},
+	"EmployeeID": 782,
+	"Name": "Villalobos Delgado Jose Moises",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"__v": 0,
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "DIGITAL",
+		"_id": {
+			"$oid": "575f82ee0c17cc2637beee35"
+		}
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fbc3"
+	},
+	"EmployeeID": 996,
+	"Name": "OROZCO SEBASTIAN",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "NO DEPARTMENT"
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fbc0"
+	},
+	"EmployeeID": 809,
+	"Name": "Tobon Sampedro Ricardo",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"__v": 0,
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "DIGITAL",
+		"_id": {
+			"$oid": "575f82ee0c17cc2637beee35"
+		}
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fbbb"
+	},
+	"EmployeeID": 775,
+	"Name": "Sandi Marron Priscila Karina",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"__v": 0,
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "GOBIERNO",
+		"_id": {
+			"$oid": "575f82ee0c17cc2637beee36"
+		}
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fbc5"
+	},
+	"EmployeeID": 99999,
+	"Name": "TENORIO CHAVERO AMAL",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "NO DEPARTMENT"
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fbca"
+	},
+	"EmployeeID": 20001,
+	"Name": "GOMEZ DE OROZCO ARMA",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "NO DEPARTMENT"
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fbbf"
+	},
+	"EmployeeID": 784,
+	"Name": "Mancera Gallardo Marco Antonio",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"__v": 0,
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "DIGITAL",
+		"_id": {
+			"$oid": "575f82ee0c17cc2637beee35"
+		}
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fbb5"
+	},
+	"EmployeeID": 585,
+	"Name": "Luna Melendez Liliana",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"__v": 0,
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "OPERACIONES",
+		"_id": {
+			"$oid": "575f82ee0c17cc2637beee33"
+		}
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fbc7"
+	},
+	"EmployeeID": 820,
+	"Name": "Madrid Cruz Cesar Javier",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"__v": 0,
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "ADMINISTRACION",
+		"_id": {
+			"$oid": "575f82ee0c17cc2637beee31"
+		}
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fbcb"
+	},
+	"EmployeeID": 880,
+	"Name": "SANTILLAN SOTELO FER",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "NO DEPARTMENT"
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fbc1"
+	},
+	"EmployeeID": 810,
+	"Name": "ADRIANO RIVAS EDUARD",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "NO DEPARTMENT"
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fbb7"
+	},
+	"EmployeeID": 619,
+	"Name": "Perez Oropeza Stephanie Geovana",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"__v": 0,
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "COMERCIAL",
+		"_id": {
+			"$oid": "575f82ee0c17cc2637beee32"
+		}
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fbc4"
+	},
+	"EmployeeID": 1019,
+	"Name": "Zamudio Lopez Anibal",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"__v": 0,
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "OPERACIONES",
+		"_id": {
+			"$oid": "575f82ee0c17cc2637beee33"
+		}
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fbc6"
+	},
+	"EmployeeID": 99998,
+	"Name": "NACAR ARREDONDO ULIS",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "NO DEPARTMENT"
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fbc9"
+	},
+	"EmployeeID": 150,
+	"Name": "GOMEZ DE OROZCO ARMA",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "NO DEPARTMENT"
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fbcc"
+	},
+	"EmployeeID": 903,
+	"Name": "JOURDAIN TEJADO JAQU",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "NO DEPARTMENT"
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fbd0"
+	},
+	"EmployeeID": 919,
+	"Name": "ISLAS LORENA",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "NO DEPARTMENT"
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fbc8"
+	},
+	"EmployeeID": 950,
+	"Name": "Barron Avendaño Priscylla Teresa",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"__v": 0,
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "ADMINISTRACION",
+		"_id": {
+			"$oid": "575f82ee0c17cc2637beee31"
+		}
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fbce"
+	},
+	"EmployeeID": 890,
+	"Name": "Ayala Torres Nancy Nayeli",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"__v": 0,
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "ADMINISTRACION",
+		"_id": {
+			"$oid": "575f82ee0c17cc2637beee31"
+		}
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fbcd"
+	},
+	"EmployeeID": 840,
+	"Name": "Nan Oriana Margarita",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"__v": 0,
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "DIGITAL",
+		"_id": {
+			"$oid": "575f82ee0c17cc2637beee35"
+		}
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fbba"
+	},
+	"EmployeeID": 967,
+	"Name": "MEZA GONZALEZ ALEJAN",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "NO DEPARTMENT"
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fbcf"
+	},
+	"EmployeeID": 865,
+	"Name": "Hernandez Manriquez Jimena Guadalupe",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"__v": 0,
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "COMERCIAL",
+		"_id": {
+			"$oid": "575f82ee0c17cc2637beee32"
+		}
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fbd2"
+	},
+	"EmployeeID": 159,
+	"Name": "SOUSA COMBE RAFAEL",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "NO DEPARTMENT"
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fbd6"
+	},
+	"EmployeeID": 99997,
+	"Name": "SANCHEZ LOPEZ MARIA ",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "NO DEPARTMENT"
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fbd5"
+	},
+	"EmployeeID": 99996,
+	"Name": "SANTIAGO DE LUNA JUL",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "NO DEPARTMENT"
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fbd8"
+	},
+	"EmployeeID": 20010,
+	"Name": "CASTILLO COLLAZO MAR",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "NO DEPARTMENT"
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fbd3"
+	},
+	"EmployeeID": 306,
+	"Name": "BARRERA MANCILLA ANG",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "NO DEPARTMENT"
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fbd7"
+	},
+	"EmployeeID": 960,
+	"Name": "HERNANDEZ LEYVA ERIC",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "NO DEPARTMENT"
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fbbc"
+	},
+	"EmployeeID": 623,
+	"Name": "OLCINA BADIA IGNACIO",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "NO DEPARTMENT"
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fbda"
+	},
+	"EmployeeID": 20014,
+	"Name": "PEREZ GASQUE MONTSER",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "NO DEPARTMENT"
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fbd1"
+	},
+	"EmployeeID": 92,
+	"Name": "PEREZ RIVAS MARISOL",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "NO DEPARTMENT"
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fbdb"
+	},
+	"EmployeeID": 511,
+	"Name": "ESCOTO BARJAU FERNAN",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "NO DEPARTMENT"
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fbd9"
+	},
+	"EmployeeID": 20013,
+	"Name": "NAVARRO PEREZ SOFIA",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "NO DEPARTMENT"
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fbdc"
+	},
+	"EmployeeID": 88888,
+	"Name": "CORCUERA TERRON MARI",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "NO DEPARTMENT"
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fbd4"
+	},
+	"EmployeeID": 911,
+	"Name": "Valverde Martinez Gabriela Lizeth",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"__v": 0,
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "DIGITAL",
+		"_id": {
+			"$oid": "575f82ee0c17cc2637beee35"
+		}
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fbde"
+	},
+	"EmployeeID": 10955661,
+	"Name": "ACCESO 2",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "NO DEPARTMENT"
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fbdd"
+	},
+	"EmployeeID": 200077,
+	"Name": "200077",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "NO DEPARTMENT"
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fbdf"
+	},
+	"EmployeeID": 10955665,
+	"Name": "ACCESO 3",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "NO DEPARTMENT"
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fbe7"
+	},
+	"EmployeeID": 1000,
+	"Name": "GARCES BAñUELOS MONS",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "NO DEPARTMENT"
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fbe5"
+	},
+	"EmployeeID": 993,
+	"Name": "CHARLES RIOJA VICTOR",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "NO DEPARTMENT"
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fbe0"
+	},
+	"EmployeeID": 987,
+	"Name": "Quiroga Moran Silvia Liliana",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"__v": 0,
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "ADMINISTRACION",
+		"_id": {
+			"$oid": "575f82ee0c17cc2637beee31"
+		}
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fbe4"
+	},
+	"EmployeeID": 88887,
+	"Name": "ALTAMIRANO MORALES J",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "NO DEPARTMENT"
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fbe2"
+	},
+	"EmployeeID": 30,
+	"Name": "MELQUIADEZ CERVANTES",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "NO DEPARTMENT"
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fbe9"
+	},
+	"EmployeeID": 88886,
+	"Name": "RUIZ COLIN LUIS ",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "NO DEPARTMENT"
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fbea"
+	},
+	"EmployeeID": 956,
+	"Name": "HERRERA CRUZ RAFAEL",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "NO DEPARTMENT"
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fbeb"
+	},
+	"EmployeeID": 1034,
+	"Name": "GARCIA RUIZ ALBERTO",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "NO DEPARTMENT"
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fbe3"
+	},
+	"EmployeeID": 819,
+	"Name": "Calvo Velazquez Guillermo",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"__v": 0,
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "OPERACIONES",
+		"_id": {
+			"$oid": "575f82ee0c17cc2637beee33"
+		}
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fbee"
+	},
+	"EmployeeID": 994,
+	"Name": "SALGADO SALGADO NATALIA",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "NO DEPARTMENT"
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fbe6"
+	},
+	"EmployeeID": 1024,
+	"Name": "Salazar Garza Sofia Alejandra",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"__v": 0,
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "DIGITAL",
+		"_id": {
+			"$oid": "575f82ee0c17cc2637beee35"
+		}
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fbec"
+	},
+	"EmployeeID": 1032,
+	"Name": "Luna Acosta Karen Andrea",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"__v": 0,
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "DIGITAL",
+		"_id": {
+			"$oid": "575f82ee0c17cc2637beee35"
+		}
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fbe8"
+	},
+	"EmployeeID": 1026,
+	"Name": "Hernandez Padron Oswaldo",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"__v": 0,
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "DIGITAL",
+		"_id": {
+			"$oid": "575f82ee0c17cc2637beee35"
+		}
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fbe1"
+	},
+	"EmployeeID": 1010,
+	"Name": "Muñoz Herrera Julio Enrique",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"__v": 0,
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "COMERCIAL",
+		"_id": {
+			"$oid": "575f82ee0c17cc2637beee32"
+		}
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fbef"
+	},
+	"EmployeeID": 1030,
+	"Name": "Maya Lopez Nancy",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"__v": 0,
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "PYMES",
+		"_id": {
+			"$oid": "575f82ee0c17cc2637beee34"
+		}
+	}
+},
+{
+	"_id": {
+		"$oid": "575f6c3bd9b1228e364bd530"
+	},
+	"Name": "Lopez Espinosa Metabaron",
+	"EmployeeID": 897,
+	"Department": {
+		"__v": 0,
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "DIGITAL",
+		"_id": {
+			"$oid": "575f82ee0c17cc2637beee35"
+		}
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fbf0"
+	},
+	"EmployeeID": 1031,
+	"Name": "Leon Villegas Montserrat",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"__v": 0,
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "PYMES",
+		"_id": {
+			"$oid": "575f82ee0c17cc2637beee34"
+		}
+	}
+},
+{
+	"_id": {
+		"$oid": "575f61eca9e55d593658fbed"
+	},
+	"EmployeeID": 1033,
+	"Name": "Leal Gomez Daniela",
+	"Record": [],
+	"__v": 0,
+	"Department": {
+		"__v": 0,
+		"Schedule": {
+			"exit": "created_at",
+			"arrive": "created_at"
+		},
+		"Name": "DIGITAL",
+		"_id": {
+			"$oid": "575f82ee0c17cc2637beee35"
+		}
+	}
+}]
+

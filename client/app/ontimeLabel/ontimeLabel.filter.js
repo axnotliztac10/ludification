@@ -3,6 +3,12 @@
 angular.module('ludificationApp')
   .filter('ontimeLabel', function () {
     return function (input) {
-      return input ? 'llego a horario' : 'llego tarde';
+      var label = '';
+      
+      if (input == 'late') label = 'llego tarde';
+      else if (input == 'tolerancy') label = 'llego justo a tiempo';
+      else label = 'llego a tiempo';
+
+      return label;
     };
   });

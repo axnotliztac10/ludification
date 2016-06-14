@@ -3,33 +3,19 @@
 angular.module('ludificationApp')
   .controller('MainLudCtrl', function ($scope, $timeout, SocketIO) {
 
-    $scope.persons = [
-	    
-	 ];
+    $scope.persons = [];
+    var audio = document.getElementById("myAudio"); 
 
-	 $scope.$on('newPerson', function (cfg, data) {
-	 	$scope.newPerson(data);
-	 });
-
-	var getCheckStatus = function () {
-		
-	};
+	SocketIO.on('newArrival', function (data) {
+    	$scope.newPerson(data);
+    });
 
 	$scope.newPerson = function (data) {
-		
-		var d = new Date();
-		var n = d.getTime();
-		var person = {time: '1288323623006', name: 'Desconocido', ontime: false, count: 5, timeLabel: 'late' };
-
-		if (data) {
-			var status = getCheckStatus(data.Record);
-			person = {time: n, name: data.Name, ontime: false, record: data.Record, timeLabel: 'late', user_id: data.User_PIN, photo: data.Photo}
-		}
-
 		$scope.animateList = true;
 		$timeout(function () {
+			audio.play();
 			$scope.animateList = false;
-			$scope.persons.unshift(person);
+			$scope.persons.unshift(data);
 		}, 500);
 	};
 
@@ -38,10 +24,6 @@ angular.module('ludificationApp')
 angular.module('ludificationApp')
   .service('SocketIO', function ($rootScope, AppConfig) {
   		var socket = io(AppConfig.socket);
-	   	socket.on('newArrival', function (data) {
-	    	$rootScope.$broadcast('newPerson', data);
-	    });
 
 	    return socket;
   });
-

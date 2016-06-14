@@ -1,5 +1,5 @@
-<div flex layout-fill layout="row">
-	<md-content flex>
+<div layout="column" layout-align="start center">
+	<md-content flex="70">
 		<!--<md-toolbar md-scroll-shrink ng-if="true">
 			<div class="md-toolbar-tools">
 			  <h3>
@@ -12,18 +12,26 @@
 		  <!--md-subheader class="md-no-sticky">Inicio</md-subheader>-->
 		  <md-list-item ng-repeat="person in persons" ng-class="{'animate': animateList, 'first-element': $first}">
 
-		    <div class="md-avatar" style="background-image: url('{{person.photo}}'); background-position: center center; background-size: cover;"/></div>
-		    <p> {{ person.name }}  <span>{{person.ontime | ontimeLabel}}</span>
+		    <div class="md-avatar" style="background-image: url('{{person.Photo}}'); background-position: center center; background-size: cover;"/></div>
+		    <p> {{ person.Name }}  <span>{{person.Record[0].timeLabel | ontimeLabel}}</span>
 		    <br>
 		    <md-chips>
-	      		<md-chip>Digital</md-chip>
-	      		<md-chip>Chilpancingo</md-chip>
-	      		<md-chip ng-class="{'late': person.timeLabel == 'late', 'ontime': person.timeLabel == 'ontime', 'tolerancy': person.timeLabel == 'tolerancy' }" class="timer-logo"></md-chip>
-	      		<md-chip>{{ person.count }}</md-chip>
+	      		<md-chip>{{ person.Department.Name }}</md-chip>
+	      		<md-chip>{{ person.Team.Name || 'No Team' }}</md-chip>
+	      		<md-chip ng-class="{
+	      			'late': person.Record[0].timeLabel == 'late',
+	      			'ontime': person.Record[0].timeLabel == 'ontime',
+	      			'tolerancy': person.Record[0].timeLabel == 'tolerancy'
+	      		}" class="timer-logo"></md-chip>
+	      		<md-chip>{{ person.Record[0].count }}</md-chip>
 			</md-chips>
 	      	</p>
-			<md-button ng-click="newPerson()" class="md-primary md-fab">{{person.time | date:"h:mm"}}</md-button>
+			<md-button class="md-primary md-fab">{{ person.Record[0].time | date:"h:mm"}}</md-button>
 		  </md-list-item>
 		</md-list>
 	</md-content>
 </div>
+<audio id="myAudio">
+	<source src="assets/sounds/late.wav" type="audio/wav">
+	Your browser does not support the audio element.
+</audio>

@@ -33,12 +33,16 @@ $baseline-grid: 8px;
 $list-item-primary-avatar-width: $baseline-grid * 7;
 
 body, html {
-  background-color: rgb(15, 18, 28) !important;
+  background-color: rgba(15, 18, 28, 0.81) !important;
+}
+
+md-content {
+  box-shadow: 1px 2px 2px 0px rgba(0, 0, 0, 0.6) !important;
 }
 
 md-list-item {
   background-color: #0f121c;
-  padding: 10px 30px 10px 30px;
+  padding: 10px 30px 10px 48px;
   & > p {
     margin-left: 10px !important;
     color: #fff;
@@ -104,17 +108,25 @@ $chip-padding: 0 5px 0 5px;
   transition: 0.5s ease-in-out;
 }
 
-[role="listitem"].first-element {
-  animation: cubic-bezier(.46, 1.48, .18, .81) slideup 3s;
-  background: #232940;
-  height: 110px;
-  padding: 10px 20px 10px 20px;
+[role="listitem"] {
   .md-avatar {
-    width: 75px;
-    height: 75px;
+    width: 55px;
+    height: 55px;
   }
-  .md-button.md-fab {
-    zoom: 1.2;
+  &.first-element {
+    box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.5);
+    animation: cubic-bezier(.46, 1.48, .18, .81) slideup 3s;
+    z-index: 10000;
+    background: #232940;
+    height: 110px;
+    padding: 10px 20px 10px 20px;
+    .md-avatar {
+      width: 85px;
+      height: 85px;
+    }
+    .md-button.md-fab {
+      zoom: 1.2;
+    }
   }
 }
 

@@ -13,7 +13,6 @@
     "errorhandler": "~1.0.0",
     "express": "~4.9.0",
     "express-session": "~1.0.2",
-    "forms-angular": "^0.7.1",
     "html-entities": "^1.2.0",
     "lodash": "~3.10.1",
     "method-override": "~1.0.0",
@@ -21,7 +20,8 @@
     "mongoose": "^4.4.3",
     "morgan": "~1.0.0",
     "serve-favicon": "~2.0.1",
-    "socket.io": "^1.4.5"
+    "socket.io": "^1.4.5",
+    "swan-admin": "git+https://github.com/axnotliztac10/swan-admin.git"
   },
   "devDependencies": {
     "connect-livereload": "~0.4.0",

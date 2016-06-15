@@ -9,9 +9,9 @@
 
  'use strict';
 
-var Employee = require('../../models/mainModels.js').Employee;
-var Department = require('../../models/mainModels.js').Department;
-var Record = require('../../models/mainModels.js').Record; 
+var Employee = require('../../models/Employee.js');
+var Department = require('../../models/Department.js');
+var Record = require('../../models/Record.js');
 
 var fs = require('fs'),
 	moment = require('moment');

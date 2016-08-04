@@ -14,6 +14,9 @@ var app = express();
 var server = require('http').createServer(app);
 var fs = require('fs');
 
+var mongoose = require('mongoose');
+mongoose.connect('mongodb://localhost:27017/ludification');
+
 var admin = require('swan-admin');
 var Employee = require('./models/Employee.js');
 var Department = require('./models/Department.js');
@@ -23,9 +26,11 @@ app.use('/admin', admin({
     models: [{
         mongooseModel: Employee,
         toString: 'Name',
-        selects: ['Department'],
         fields: {
-            
+            Department: {
+            	editor: 'dropdown',
+            	service: { name: 'departments', model: Department }
+            }
         }
     },{
         mongooseModel: Department,
@@ -49,9 +54,6 @@ app.use('/admin', admin({
 
 require('./config/express')(app);
 require('./routes')(app);
-
-var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost:27017/ludification');
 
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
